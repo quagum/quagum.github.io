@@ -55,6 +55,22 @@ img{
     max-width: 100%;
 }
 
+.btn{
+    display:inline-block;
+    padding: 5.em 1.5em;
+    background: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase; 
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
 /*Typography*/
 
 strong{font-weight: var(--fw-bold)}
@@ -134,5 +150,41 @@ nav{display: none}
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+}
+
+/*Services*/
+
+.my-services{
+    background-color:var(--clr-dark);
+    background-image:url(img/regi.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.section__title--services{
+    color: white;
+    position: relative; 
+}
+
+.section__title--services::after{
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: white;
+    opacity: 0.25;
+}
+
+@media (min-width: 800px){
+    .services{
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    } 
+    .service + .service {
+        margin-left: 2em;
     }
 }
