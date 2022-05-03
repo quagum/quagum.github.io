@@ -134,6 +134,7 @@ header{
 .nav{
     position: fixed; 
     background: var(--clr-dark);
+    opacity: 0.99;
     color: var(--clr-light);
     top: 0;
     bottom: 0;
