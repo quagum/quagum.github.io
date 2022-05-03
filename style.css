@@ -161,6 +161,7 @@ header{
 
 .nav__link{
     color:inherit; 
+    font-size: 50px;
     font-weight: var(--fw-bold);
     text-decoration: none;    
 }
