@@ -33,6 +33,11 @@
 
 
 /*General*/
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -120,14 +125,13 @@ h3 {font-size: var(--fs-h3)}
 }
 
 
+
+
 /*Header*/
 header{
     display: flex; 
     justify-content: space-between;
     padding: 1em; 
-}
-.logo{
-    max-width: 50px;
 }
 
 .nav{
@@ -140,7 +144,7 @@ header{
     right: 0;
     z-index: 100;
 
-    transform: translateX(0%);
+    transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -174,6 +178,28 @@ header{
     right: 1em; 
     top: 1em;
     z-index: 1000;
+}
+
+.nav-open .nav{
+    transform: translateX(0); 
+}
+
+.nav-open .nav-toggle{
+    position: fixed;
+}
+
+.nav-open .hamburger{
+    background: var(--clr-accent);
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before{
+    background: var(--clr-accent);
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after{
+    opacity: 0;
 }
 
 .hamburger{
@@ -265,6 +291,7 @@ header{
 }
 
 .services{
+    margin-top: 10.5em; 
     margin-bottom: 4em;
 }
 
@@ -289,7 +316,6 @@ header{
     max-width: 1000px;
     margin: 0 auto;
 }
-
 
 @media (min-width: 600px){
     .about-me{
