@@ -60,11 +60,6 @@ img{
     max-width: 100%;
 }
 
-:focus{
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px; 
-}
-
 .btn{
     display:inline-block;
     padding: .5em 1.5em;
@@ -159,8 +154,8 @@ header{
 
 .nav__link{
     color:inherit; 
-    font-size: 50px;
-    font-weight: var(--fw-bold);
+    font-size: 40px;
+    font-weight: var(--fw-reg);
     text-decoration: none;    
 }
 
@@ -348,14 +343,14 @@ header{
 }
 
 /*PORTFOLIO*/ 
-.my-work{
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+.my-projects{
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 }
 
-.section__subtitle--work{
-    color: var(--clr-accent);
+.section__subtitle{
+    color: var(--clr-dark);
     font-weight: var(--fw-bold);
     margin-bottom: 1em;
 }
@@ -365,32 +360,14 @@ header{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.portfolio__item{
-    background: var(--clr-accent);
-    overflow: hidden; 
-}
-
-.portfolio__img{
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear; 
-}
-
-.portfolio__item:focus{
-    position: relative;
-    z-index: 2;
-}
-
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img{
-    transition: scale(1.2);
-    opacity: .5;
+.portfolio__item:hover{
+    transform: scale(1.03);
 }
 
 /*FOOTER*/
 .footer{
     background: #111;
-    color: var(--clr-accent);
+    color: var(--clr-light);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
