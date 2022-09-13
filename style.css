@@ -140,7 +140,7 @@ header{
     right: 0;
     z-index: 100;
 
-    transform: translateX(0%);
+    transform: translateX(90%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -366,8 +366,8 @@ header{
 /* footer */
 
 .footer{
-    background: #111;
-    color: var(--clr-accent);
+    background: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
