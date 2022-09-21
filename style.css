@@ -137,7 +137,7 @@ header{
     right: 0;
     z-index: 100;
 
-    transform: translateX(90%);
+    transform: translateX(0%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
