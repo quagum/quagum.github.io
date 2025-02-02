@@ -88,11 +88,11 @@ hr.black-line{
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-    padding-top: 10px;
     padding-right: 50px;
 }
 
 .personal-profile p {
+    padding-top: 10px;
     padding-left: 30px;
 }
 
