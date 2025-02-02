@@ -63,10 +63,14 @@ h3 {
     font-size: 21px;
 }
 
-.contact-info p {
+.contact-info {
+    list-style-type: none;
+    padding-right: 50px;    
+}
+
+.contact-info li {
     font-size: 12px;
     line-height: 2;
-    padding-right: 50px;    
 }
 
 hr.yellow-line {
@@ -100,14 +104,12 @@ hr.black-line{
 }
 
 .job-list {
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-left: 20px;
-}
-
-.job p {
-    padding-right: 50px;
+    margin-left: -20px;
+    margin-top: 0px;
 }
 
 .skills {
@@ -116,7 +118,8 @@ hr.black-line{
     margin-top: 20px;
 }
 
-.skills-grid {
+.skills-list {
+    list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 150px);
     margin-top: 15px;
@@ -130,10 +133,9 @@ hr.black-line{
     margin-bottom: 20px;
 }
 
-.education-content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
+.education-list {
+    margin-left: 40px;
+    margin-top: 0px;
 }
 
 .degree {
