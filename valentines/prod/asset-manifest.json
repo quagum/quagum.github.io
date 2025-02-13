@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/valentines/prod/static/css/main.8b4abcb3.css",
-    "main.js": "/valentines/prod/static/js/main.a3712509.js",
+    "main.js": "/valentines/prod/static/js/main.1af4cdb3.js",
     "static/media/background.jpg": "/valentines/prod/static/media/background.6171d77f0e2ebd60da53.jpg",
     "static/media/legend-background.jpg": "/valentines/prod/static/media/legend-background.c5f6ec7e33bc90e55901.jpg",
     "static/media/explosion.png": "/valentines/prod/static/media/explosion.7833fc066a46b06265eb.png",
     "index.html": "/valentines/prod/index.html",
     "main.8b4abcb3.css.map": "/valentines/prod/static/css/main.8b4abcb3.css.map",
-    "main.a3712509.js.map": "/valentines/prod/static/js/main.a3712509.js.map"
+    "main.1af4cdb3.js.map": "/valentines/prod/static/js/main.1af4cdb3.js.map"
   },
   "entrypoints": [
     "static/css/main.8b4abcb3.css",
-    "static/js/main.a3712509.js"
+    "static/js/main.1af4cdb3.js"
   ]
 }
