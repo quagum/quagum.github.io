@@ -1,0 +1,119 @@
+.main-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;                         
+  width: 100vw;
+  position: relative;        
+}
+
+.pokemon-info {
+  background-color: rgb(246, 246, 246);
+  padding: 5px;
+  border-radius: 5px;
+  width: 20vw;  
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.pokemon-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.pokemon-info progress {
+  background-color: greenyellow;
+  width: 100%; 
+  min-height: 2vh;
+  max-height: 2vh;
+}
+
+.pokemon1 {
+  position: absolute;
+  left: 23%;
+  bottom: 20%; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+.pokemon1 img {
+  width: 15vw;                           
+  height: 25vh;          
+}
+
+.pokemon2 {
+  position: absolute;
+  top: 20%;                            
+  left: 55%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+.pokemon2 img {
+  width: 15vw;
+  height: 25vh;                          
+}
+
+.charm1 {
+  width: 5vw;
+  height: auto;
+  position: absolute;
+  top: 60%;                            
+  left: 40%;
+}
+.charm2 {
+  width: 5vw;
+  height: auto;
+  position: absolute;
+  top: 55%;                            
+  left: 45%;
+}
+.charm3 {
+  width: 5vw;
+  height: auto;
+  position: absolute;
+  top: 45%;                            
+  left: 50%;
+}
+.charm1, .charm2, .charm3 {
+  animation: travel 0.5s ease-out forwards;
+  opacity: 0;
+}
+@keyframes travel {
+  0% {
+    transform: translate(0, 0) scale(0.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(10vw, -10vh) scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+.attempt-message {
+  background-color: rgb(246, 246, 246);
+  width: 20vw;  
+  height: auto;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.explosion {
+  animation: expand 0.5s ease-out forwards;
+}
+@keyframes expand {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 1;
+  }
+}
