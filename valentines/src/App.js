@@ -4,7 +4,7 @@ import Main from './Main';
 
 function App() {
   return (
-    <Router basename="/valentines">
+    <Router basename="/valentines/prod/">
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/game-over" element={<GameOver />} />
