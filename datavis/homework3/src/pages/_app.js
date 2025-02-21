@@ -6,7 +6,7 @@ import Child2 from "./components/Child2";
 export default function App() {
   const [data, setData] = useState([])
   useEffect(() => {
-    d3.csv("/homework3/tips.csv")
+    d3.csv("/tips.csv")
       .then(parsedData => {
         setData(parsedData);
       })
