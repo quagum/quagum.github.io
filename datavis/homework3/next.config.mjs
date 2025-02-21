@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/datavis/homework3", // Match your repo path
-  assetPrefix: "/datavis/homework3/",
+  basePath: "/homework3",
+  assetPrefix: "/homework3/",
   output: "export"
 };
 
-export default nextConfig;
+module.exports = nextConfig;
