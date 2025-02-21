@@ -1,18 +1,19 @@
 #!/bin/bash
 
-# Build the Next.js app for static export
+# Build and export the Next.js app
 npm run build
-
-# Export the app to a static site (generates 'out' folder if configured)
 npm run export
 
-# Create the subfolder if it doesn't exist
-mkdir -p prod
+# Remove existing root files that might conflict (e.g., old index.html)
+rm -rf *.html *.js *.css
 
-# Copy the exported files to the subfolder
-cp -r out/* prod
+# Copy the exported files to the root
+cp -r out/* .
+
+# Ensure .nojekyll file exists
+touch .nojekyll
 
 # Commit and push the changes
-git add prod
-git commit -m "Deploy homework3 to GitHub Pages"
+git add .
+git commit -m "Deploy homework3 to GitHub Pages root"
 git push origin main
