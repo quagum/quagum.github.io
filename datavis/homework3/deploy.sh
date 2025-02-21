@@ -4,9 +4,6 @@
 npm run build
 npm run export
 
-# Remove existing root files that might conflict (e.g., old index.html)
-rm -rf *.html *.js *.css
-
 # Copy the exported files to the root
 cp -r out/* .
 
