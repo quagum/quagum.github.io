@@ -1,0 +1,9 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "start_url": "/datavis/homework4/prod/",
+  "scope": "/datavis/homework4/prod/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
