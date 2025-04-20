@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/datavis/homework6/prod/static/css/main.4420dd2d.css",
+    "main.js": "/datavis/homework6/prod/static/js/main.d816ee17.js",
+    "index.html": "/datavis/homework6/prod/index.html",
+    "main.4420dd2d.css.map": "/datavis/homework6/prod/static/css/main.4420dd2d.css.map",
+    "main.d816ee17.js.map": "/datavis/homework6/prod/static/js/main.d816ee17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4420dd2d.css",
+    "static/js/main.d816ee17.js"
+  ]
+}
